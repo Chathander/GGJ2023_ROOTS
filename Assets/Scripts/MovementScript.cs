@@ -19,6 +19,9 @@ public class MovementScript : MonoBehaviour
     private bool isJumping;
     [SerializeField]
     private bool isGrounded;
+
+    public float jumpForce;
+    public float movementForce;
     // Start is called before the first frame update
     void Start()
     {
@@ -89,11 +92,11 @@ public class MovementScript : MonoBehaviour
     private void ForceMovement()
     {
         if (isMovingRight)
-            playerRigBod.AddForce(transform.right * 10);
+            playerRigBod.AddForce(Vector2.right * movementForce);
         if (isMovingLeft)
-            playerRigBod.AddForce(transform.right * -10);
+            playerRigBod.AddForce(Vector2.left * movementForce);
         if (isJumping)
-            playerRigBod.AddForce(transform.up * -200);
+            playerRigBod.AddForce(Vector2.up * jumpForce);
         
     }
     

@@ -624,7 +624,7 @@ Camera:
   far clip plane: 1000
   field of view: 90
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 12.880299
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -648,7 +648,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1255972185}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 23.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -710,6 +710,8 @@ MonoBehaviour:
   isMovingRight: 0
   isJumping: 0
   isGrounded: 0
+  jumpForce: -300
+  movementForce: 30
 --- !u!1001 &2943142093836804633
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -722,6 +724,11 @@ PrefabInstance:
       propertyPath: planet
       value: 
       objectReference: {fileID: 75536099}
+    - target: {fileID: 504697411633486348, guid: 9aeaef4c1aad2ed4ca4a6f41bade4cd0,
+        type: 3}
+      propertyPath: gravForce
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 504697411633486348, guid: 9aeaef4c1aad2ed4ca4a6f41bade4cd0,
         type: 3}
       propertyPath: gravityDistence

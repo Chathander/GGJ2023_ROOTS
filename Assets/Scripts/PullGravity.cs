@@ -20,6 +20,8 @@ public class PullGravity : MonoBehaviour
 
     private void Update()
     {
-        Vector3.Distance(planet.transform.position, transform.position);
+        float dist = Vector3.Distance(planet.transform.position, transform.position);
+        Vector3 vecK = planet.transform.position - transform.position;
+        rb2D.AddForce(vecK.normalized * ((1.0f - dist / gravityDistence) * gravForce));
     }
 }

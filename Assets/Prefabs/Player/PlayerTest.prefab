@@ -183,7 +183,7 @@ MonoBehaviour:
   isJumping: 0
   isGrounded: 0
   jumpForce: -600
-  movementForce: 30
+  movementForce: 70
   maxSpeed: 1
 --- !u!1 &6574822530834097594
 GameObject:
@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 618190721193398706}
   - component: {fileID: 384433529556588393}
   - component: {fileID: 743084459121448666}
+  - component: {fileID: 4868856864342206463}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -303,3 +304,16 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &4868856864342206463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6574822530834097594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b81b6f8b4745747914903aa400331b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetZoomIn: 0

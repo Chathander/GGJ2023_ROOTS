@@ -10,6 +10,8 @@ public class MovementScript : MonoBehaviour
 {
     private Rigidbody2D playerRigBod;
 
+    private Transform localTranform;
+
     private Input _keyCode;
     [SerializeField]
     private bool isMovingLeft;
@@ -19,10 +21,16 @@ public class MovementScript : MonoBehaviour
     private bool isJumping;
     [SerializeField]
     private bool isGrounded;
+
+    public float jumpForce;
+    public float movementForce;
+
+    public float maxSpeed;
     // Start is called before the first frame update
     void Start()
     {
         playerRigBod = GetComponent<Rigidbody2D>();
+        localTranform = GetComponent<Transform>();
     }
 
     // Update is called once per frame
@@ -57,22 +65,22 @@ public class MovementScript : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            isMovingRight = true;
-            Debug.Log("Createdmovement");
+            isMovingLeft = true;
+            Debug.Log("CreatedLeftmovement");
         }
         else
         {
-            isMovingRight = false;
+            isMovingLeft = false;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             isMovingRight = true;
-            Debug.Log("CreatedMovement");
+            Debug.Log("CreatedRightMovement");
         }
         else
         {
-            isMovingLeft = false;
+            isMovingRight = false;
         }
 
         if (Input.GetKey(KeyCode.W) && isGrounded)
@@ -86,14 +94,14 @@ public class MovementScript : MonoBehaviour
         }
     }
 
-    private void ForceMovement()
+    private void ForceMovement()    
     {
         if (isMovingRight)
-            playerRigBod.AddForce(transform.right * 10);
+            playerRigBod.AddRelativeForce(Vector2.left * movementForce);
         if (isMovingLeft)
-            playerRigBod.AddForce(transform.right * -10);
-        if (isJumping)
-            playerRigBod.AddForce(transform.up * -200);
+            playerRigBod.AddRelativeForce(Vector2.right * movementForce);
+        if (isJumping)  
+            playerRigBod.AddRelativeForce(Vector2.up * jumpForce);
         
     }
     

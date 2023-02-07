@@ -703,6 +703,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3346203728431292633, guid: 1b2c7239a874156418b1025e2de21bf0,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3346203728431292633, guid: 1b2c7239a874156418b1025e2de21bf0,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594848120071998202, guid: 1b2c7239a874156418b1025e2de21bf0,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594848120071998202, guid: 1b2c7239a874156418b1025e2de21bf0,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 7.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5594848120071998202, guid: 1b2c7239a874156418b1025e2de21bf0,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7577313405447235694, guid: 1b2c7239a874156418b1025e2de21bf0,
         type: 3}
       propertyPath: m_Name
@@ -710,45 +735,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b2c7239a874156418b1025e2de21bf0, type: 3}
---- !u!1 &825845176 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 742257345496892551, guid: 9aeaef4c1aad2ed4ca4a6f41bade4cd0,
-    type: 3}
-  m_PrefabInstance: {fileID: 2943142093836804633}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &825845183 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6666067319357072612, guid: 9aeaef4c1aad2ed4ca4a6f41bade4cd0,
     type: 3}
   m_PrefabInstance: {fileID: 2943142093836804633}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &825845184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825845176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 985ba461ae5ab274a817a7429b35696d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnFruitsCollected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1492501776}
-        m_TargetAssemblyTypeName: InventoryUi, Assembly-CSharp
-        m_MethodName: UpdateFruitText
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &842896653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1813,5 +1805,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7363362982554246398, guid: 9aeaef4c1aad2ed4ca4a6f41bade4cd0,
+        type: 3}
+      propertyPath: OnFruitsCollected.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1492501776}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9aeaef4c1aad2ed4ca4a6f41bade4cd0, type: 3}

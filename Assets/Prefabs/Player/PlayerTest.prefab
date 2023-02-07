@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 504697411633486348}
   - component: {fileID: 3581195316918998221}
   - component: {fileID: 8831262028696512372}
+  - component: {fileID: 7363362982554246398}
   m_Layer: 0
   m_Name: PlayerTest
   m_TagString: Untagged
@@ -151,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
   gravForce: 30
-  gravityDistence: 100
+  gravityDistence: 200
   planet: {fileID: 0}
 --- !u!114 &3581195316918998221
 MonoBehaviour:
@@ -185,6 +186,33 @@ MonoBehaviour:
   jumpForce: -600
   movementForce: 70
   maxSpeed: 1
+--- !u!114 &7363362982554246398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742257345496892551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 985ba461ae5ab274a817a7429b35696d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnFruitsCollected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: InventoryUi, Assembly-CSharp
+        m_MethodName: UpdateFruitText
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6574822530834097594
 GameObject:
   m_ObjectHideFlags: 0

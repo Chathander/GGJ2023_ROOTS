@@ -316,4 +316,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89b81b6f8b4745747914903aa400331b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetZoomIn: 0
+  targetZoomIn: 50
